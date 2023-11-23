@@ -1,0 +1,21 @@
+<div id="<%= dom_id payment %>">
+
+
+  <div class="category-section">
+    <div class="payment-name-section">
+      <div class="payment-name">
+        <%= payment.name %>
+      </div>
+      <div class="time">
+        <%= payment.created_at.strftime("%d %B %Y at %I:%M %p") %>
+      </div>
+    </div>
+  
+    <div class="total">
+      <%= "$#{payment.amount}" %>
+    </div>
+  </div>
+
+
+
+</div>
