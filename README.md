@@ -43,10 +43,10 @@
 - **Capybara used for integration tests**
 
 ## 💻 Demo <a name="demo"></a>
-Here is the live [Demo](https://budget-2kt4.onrender.com/)
+Here is the live [Demo](https://budget-app-ali.onrender.com/)
 
 ## 💻 Presentation <a name="presentation"></a>
-Here is the [Project Presentation](https://www.loom.com/share/35fb5f9fc28d4c37be7aa0b2d5f0b3f1)
+Here is the [Project Presentation](https://www.loom.com/share/baab7c64ed8640a6aafc233f1ebd692c)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,7 +65,7 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- `git clone https://github.com/Uthmanbello/budget_app`
+- `git clone https://github.com/devalibello/budget-app`
 - `cd budget_app`
 - `code .` <!-- If you are using VS Code -->
 
