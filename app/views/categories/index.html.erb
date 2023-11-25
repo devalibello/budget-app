@@ -19,7 +19,7 @@
 </div>
 
 <div id="categories">
-  <% @categories.each do |category| %>
+  <% @categories.order(created_at: :desc).each do |category| %>
     <%= render category %>
   <% end %>
 </div>
