@@ -1,0 +1,28 @@
+<!-- <p style="color: green"><%= notice %></p> -->
+
+<h1 class="category-heading">PAYMENTS FOR <%= @category.name %></h1>
+
+<div id="payments">
+  <% @payments.order(created_at: :desc).each do |payment| %>
+    <%= render payment %>
+  <% end %>
+</div>
+<div class="category-section">
+  <div class="total-text">
+    TOTAL
+  </div>
+  <div class="total">
+    <% total = 0 %>
+    <% @category.payments.each do |payment| %>
+      <% total = total + payment.amount %>
+    <% end %>
+    <%= "$#{total}" %>
+  </div>
+</div>
+
+<div class="add-category">
+  <h1><%= link_to "NEW PAYMENT", new_category_payment_path %></h1>
+</div>
+<div class="category-heading">
+  <h1><%= link_to "Back", categories_path %></h1>
+</div>
