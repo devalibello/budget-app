@@ -161,18 +161,18 @@ body {
 }
 
 .splash {
-    font-size: 1.6rem;
-    margin-bottom: 10px;
-  }
-  
-  .splash-devalibello {
-    text-transform: none;
-    font-size: 1.2rem;
-    margin-top: 10px;
-  }
-  
-  .login-signup {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-  }
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+}
+
+.splash-devalibello {
+  text-transform: none;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.login-signup {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
