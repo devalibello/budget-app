@@ -3,7 +3,7 @@
 <h1 class="category-heading">PAYMENTS FOR <%= @category.name %></h1>
 
 <div id="payments">
-  <% @payments.each do |payment| %>
+  <% @payments.order(created_at: :desc).each do |payment| %>
     <%= render payment %>
   <% end %>
 </div>
