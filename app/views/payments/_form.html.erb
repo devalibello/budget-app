@@ -28,12 +28,7 @@
   
     <div class="field">
       <%= form.label :category_id, class: "form-text" %> <br>
-      <% Category.where(author_id: current_user.id).each do |category| %>
-        <label>
-          <%= form.check_box :category_id, { multiple: false }, category.id, nil %>
-          <%= category.name %>
-        </label><br>
-      <% end %>
+      <%= form.collection_select :category_id, Category.where(author_id: current_user.id), :id, :name, prompt: 'Select a category', class: "form-field" %>
     </div>
   
     <div>
